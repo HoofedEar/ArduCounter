@@ -155,7 +155,9 @@ void drawCounter()
   }
 
   // Draw a divider between players
+  arduboy.drawFastVLine((WIDTH / 2), 1, HEIGHT, WHITE);
   arduboy.drawFastVLine((WIDTH / 2) - 1, 1, HEIGHT, WHITE);
+  arduboy.drawFastVLine((WIDTH / 2) - 2, 1, HEIGHT, WHITE);
 
   // Draw a line underneath the current player
   if (curplayer == 0) {
