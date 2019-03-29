@@ -16,5 +16,6 @@ Experience counters for each player.
 [Up] + [A] + [B] - Reset all life totals and counters.
 
 ## Future Plans
+Save life totals to EEPROM.  
 Make the interface prettier.  
 Energy counters?  
