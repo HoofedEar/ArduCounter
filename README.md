@@ -1,6 +1,7 @@
 # ArduCounter
 Magic the Gathering life total tracker/counter for Arduboy.
 
+![From ProjectABE emulator](https://s.put.re/gSjabBDb.png)
 
 ## Features
 Life totals for up to two players.  
