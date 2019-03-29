@@ -85,24 +85,6 @@ void counterControl() {
     counterP2 = -1;
   }
   
-  // Set the maximum range of numbers.
-  // TODO: Find better method.
-  /*
-  if (player1 > 99) {
-    player1 = 99;
-  }
-  if (player1 < 0) {
-    player1 = 0;
-  }
-  
-  if (player2 > 99) {
-    player2 = 99;
-  }
-  if (player2 < 0) {
-    player2 = 0;
-  }
-  */
-  
   // Increment the counters
   if (arduboy.justPressed(B_BUTTON) && curplayer == 0) {
     if (counterP1 == 0) {
