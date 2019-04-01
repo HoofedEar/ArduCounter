@@ -1,4 +1,9 @@
-
+/*
+ArduMTG by HoofedEar (Chris V.)
+Version 1.1
+https://github.com/HoofedEar/ArduMTG
+MIT License
+*/
 #include <Arduboy2.h>
  
 Arduboy2 arduboy;
@@ -47,7 +52,7 @@ void setup() {
 }
 
 
-// Select A for Standard, B for Commander.
+// Main menu for mode selection
 void gameSelect() {
   arduboy.print("   MTG LIFE COUNTER\n   ----------------\nSelect a mode.\nL  - 2 Players (20)\nR  - Commander (40)\nUP - Simple (20)");
   arduboy.drawBitmap(0, 0, blue, 12, 12, WHITE);
@@ -158,7 +163,7 @@ void standardControl() {
 
 void drawStandard()
 {
-  // We have the make our own "padding" for the 0's
+  // Display life total
   arduboy.setTextSize(5);
   if (player1 < 10) {
     
@@ -228,8 +233,6 @@ void drawStandard()
 void commanderControl() {
   
   //Controls for the life counter
-  //Left is always Player 1
-  //Right is always Player 2
   if (arduboy.justPressed(UP_BUTTON) && player1 < 999) {
     player1 += 1;
   }
@@ -256,14 +259,14 @@ void commanderControl() {
     counterP1 = 1;
   }
   
-  // Increment the counters
+  // Increment poison counters
   if (arduboy.justPressed(A_BUTTON)) {
       if (poisonP1 < 10) {
         poisonP1 += 1;
       }
   }
   
-  // Change the counter type
+  // Increment experience counters
   if (arduboy.justPressed(B_BUTTON)) {
     if (expP1 < 99) {
         expP1 += 1;
@@ -274,7 +277,7 @@ void commanderControl() {
 
 void drawCommander()
 {
-  // We have the make our own "padding" for the 0's
+  // Draw life total
   arduboy.print("Player 1");
   arduboy.setTextSize(5);
   arduboy.setCursor(0, 25);
@@ -290,12 +293,6 @@ void drawCommander()
   arduboy.setTextSize(2);
   arduboy.print(" ");
 
-  /* Draw a divider between life and counters
-  arduboy.drawFastVLine((WIDTH / 2), 1, HEIGHT, WHITE);
-  arduboy.drawFastVLine((WIDTH / 2) - 1, 1, HEIGHT, WHITE);
-  arduboy.drawFastVLine((WIDTH / 2) - 2, 1, HEIGHT, WHITE);
-  */
-  
   // Draw our types of counters
   arduboy.drawBitmap(91, 28, poison, 8, 8, WHITE);
   arduboy.setCursor(103, 25);
@@ -317,7 +314,7 @@ void drawCommander()
  */
  void simpleControl() {
   
-  //Controls for the life counter
+  // Controls for the life counter
   if (arduboy.justPressed(UP_BUTTON) && player1 < 999) {
     player1 += 1;
   }
@@ -341,7 +338,7 @@ void drawCommander()
 
 void drawSimple()
 {
-  // We have the make our own "padding" for the 0's
+  // Draw life total
   arduboy.setTextSize(2);
   arduboy.print("Player 1");
   arduboy.setTextSize(5);
