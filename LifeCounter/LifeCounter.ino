@@ -50,9 +50,9 @@ void setup() {
 // Select A for Standard, B for Commander.
 void gameSelect() {
   arduboy.print("   MTG LIFE COUNTER\n   ----------------\nSelect a mode.\nL  - 2 Players (20)\nR  - Commander (40)\nUP - Simple (20)");
-  arduboy.drawBitmap(3, 50, blue, 12, 12, WHITE);
+  arduboy.drawBitmap(0, 0, blue, 12, 12, WHITE);
   arduboy.setCursor(21, 52);
-  arduboy.print("made by chris v.");
+  arduboy.print("made by HoofedEar.");
   if (arduboy.justPressed(LEFT_BUTTON)) {
       gamemode = 1;
   }
