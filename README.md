@@ -1,4 +1,4 @@
-# ArduCounter
+# ArduMTG
 Magic the Gathering life total tracker/counter for Arduboy.
 
 Try the latest version [here](https://felipemanga.github.io/ProjectABE/?hex=https://raw.githubusercontent.com/HoofedEar/ArduMTG/master/ArduMTG/ArduMTG.hex)  
