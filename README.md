@@ -2,7 +2,7 @@
 Magic the Gathering life total tracker/counter for Arduboy.
 
 Try the latest version [here](https://felipemanga.github.io/ProjectABE/?hex=https://raw.githubusercontent.com/HoofedEar/ArduMTG/master/ArduMTG/ArduMTG.hex)  
-![From ProjectABE emulator](https://s.put.re/49fLdZpt.png)
+![From ProjectABE emulator](https://s.put.re/W123BBDv.png)
 
 ## Features (Version 1.1)
 Three different modes:  
